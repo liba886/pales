@@ -36,31 +36,7 @@
 <body bgcolor="0000FF" text="00ff00">
     <h1> 50 pales </h1>
     <h3> empieza com 4 pales y todos doble (stock)<br> 3 single dobles </h3>
-<div id="reloj" style="font-size: 36px;color: white; font-weight:bold; text-align:"></div>
-<script>
-  function actualizarReloj() {
-    const ahora = new Date();
-    let horas = ahora.getHours();
-    const minutos = ahora.getMinutes();
-    const segundos = ahora.getSeconds();
-
-    // Convertir a formato 12 horas
-    const ampm = horas >= 12 ? 'PM' : 'AM';
-    horas = horas % 12;
-    horas = horas || 12; // Si horas es 0, poner a 12
-
-    // Formatear números con ceros a la izquierda
-    const minutosFormateados = minutos < 10 ? '0' + minutos : minutos;
-    const segundosFormateados = segundos < 10 ? '0' + segundos : segundos;
-
-    const tiempo = `${horas}:${minutosFormateados}:${segundosFormateados} ${ampm}`;
-
-    document.getElementById('reloj').textContent = tiempo;
-  }
-
-  // Actualizar el reloj cada segundo
-  setInterval(actualizarReloj, 1000);
-</script>
+     <h3>liba </h3>
 
 
 
